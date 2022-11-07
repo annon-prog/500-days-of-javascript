@@ -4,7 +4,7 @@ function addedSpace(spacing){
     let addSpace=spacing.join('').split(' ');
     return addSpace;
 }
-let newSpace= addedSpace(Iloveyou);
+let newSpace= addedSpace('Iloveyou');
 console.log(newSpace);
 
 //Day two practice:find the area of a circle.
