@@ -51,3 +51,12 @@ console.log(oddEvenMonth(January));
 console.log(oddEvenMonth(February));
 console.log(oddEvenMonth(August));
 console.log(oddEvenMonth(November));
+
+//Day four practice: finding the area of a rectangle
+function area(length,width){
+    return (length * width);
+}
+console.log(area(8,9));
+console.log(area(7,6));
+console.log(area(10,5));
+console.log(area(16,15));
