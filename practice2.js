@@ -71,3 +71,17 @@ function getFactorial(number){
 
 console.log(getFactorial(5));
 console.log(getFactorial(7));
+
+// alternative
+function factorialAlternative(number){
+    let factorial = 1;
+   if (number === 0 | number === 1){
+    return 1;
+   }
+   for (let num = 2; num <= number; num++){
+    factorial += num;
+   }
+   return factorial;
+}
+console.log(factorialAlternative(5));
+console.log(factorialAlternative(7));
