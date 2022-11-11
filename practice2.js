@@ -60,3 +60,14 @@ console.log(area(8,9));
 console.log(area(7,6));
 console.log(area(10,5));
 console.log(area(16,15));
+
+//Day 5 practice:
+function getFactorial(number){
+    if (number===0){
+        return 1;
+    }
+    return number * getFactorial(number - 1);
+}
+
+console.log(getFactorial(5));
+console.log(getFactorial(7));
