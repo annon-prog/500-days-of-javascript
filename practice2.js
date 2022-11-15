@@ -83,3 +83,20 @@ function factorialAlternative(number){
 }
 console.log(factorialAlternative(5));
 console.log(factorialAlternative(7));
+
+const  square= (num) => {
+    return num * num;
+}
+console.log(square(8));
+console.log(square(10));
+console.log(square(12));
+console.log(square(14));
+
+const ageInDays = (age)=>{
+   return age * 365;
+}
+
+console.log(ageInDays(20));
+console.log(ageInDays(24));
+console.log(ageInDays(18));
+console.log(ageInDays(6));
