@@ -1,12 +1,10 @@
-//Day one practice:Add spacing to a sentence
-
-function addedSpace(spacing){
-    let addSpace=spacing.join('').split(' ');
-    return addSpace;
+function removeSpaces(orgText){
+    let removedSpaces = orgText.split(" ").join("");
+    return removedSpaces;
 }
-let newSpace= addedSpace('Iloveyou');
-console.log(newSpace);
+ let text= removeSpaces("Dev tips daily");
 
+ console.log(text);
 //Day two practice:find the area of a circle.
 
 const PI=3.14596;
