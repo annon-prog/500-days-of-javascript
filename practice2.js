@@ -100,3 +100,29 @@ console.log(ageInDays(20));
 console.log(ageInDays(24));
 console.log(ageInDays(18));
 console.log(ageInDays(6));
+
+const remainder = (alan, mike)=>{
+    return alan % mike;
+}
+console.log(remainder(24,20))
+console.log(remainder(18,10))
+console.log(remainder(20,10))
+console.log(remainder(18,6))
+
+let foods={
+    apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
+
+}
+
+const scanning = (scannedItems)=>{
+    return foods[scannedItems];
+}
+
+console.log(scanning('apples'))
+console.log(scanning('oranges'))
+console.log(scanning('plums'))
