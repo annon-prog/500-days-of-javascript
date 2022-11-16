@@ -53,3 +53,58 @@ function removeSpaces(orgText){
 
 console.log(checkPerfect(28));
 console.log(checkPerfect(36));
+
+//Day seven: Check whether a number is an armstrong
+function checkArmstrong(n){
+
+   let sum = 0, orgNum = n;
+ 
+   while(n > 0){
+ 
+     let remainder = n % 10;
+ 
+     sum += remainder * remainder * remainder;
+ 
+     n = parseInt(n / 10);
+     
+   }
+   
+   if(sum == orgNum){
+ 
+     return true;
+     
+   } else{
+ 
+     return false;
+     
+   }
+ }
+ 
+ 
+ console.log(checkArmstrong(153));
+ 
+ console.log(checkArmstrong(326));
+ //Day eight: Reversing a number without using .reverse(),.split() or .join()
+
+ function revNumber(num){
+
+   let rev = 0, lastDigit;
+ 
+   while(num > 0){
+ 
+     lastDigit = num % 10;
+ 
+     rev = rev * 10 + lastDigit;
+ 
+     num = Math.floor(num/10);
+     
+   }
+ 
+   return rev;
+   
+ }
+ 
+ 
+ console.log(revNumber(153));
+ 
+ console.log(revNumber(326));
