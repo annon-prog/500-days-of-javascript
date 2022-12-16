@@ -126,3 +126,103 @@ const scanning = (scannedItems)=>{
 console.log(scanning('apples'))
 console.log(scanning('oranges'))
 console.log(scanning('plums'))
+//
+const isLeap = (year) => {
+    if (year % 4 == 0 | year % 100 == 0 && year % 400 == 0){
+      return "Leap year";
+    }
+     return "Not a leap year";
+   }
+   
+   console.log(isLeap(1996));
+   console.log(isLeap(1997));
+   console.log(isLeap(1900));
+   console.log(isLeap(2000));
+
+
+//for loop exercises.
+//create a for loop to print number 1 to 10
+function printNumbers(){
+    for (let i=1; i<=10; i++){
+        console.log(i);
+    }
+}
+printNumbers();
+
+//print even numbers in a given array
+
+const getEven = array =>{
+    for (let i=0; i< array.length; i++){
+        if (array[i] % 2 == 0){
+            console.log(array[i]);
+        }
+    }
+}
+
+let array = [13,22,23,54,57,89,76,90,101];
+
+getEven(array);
+
+//create a 2D array using nested loops.
+function printArray(arr){
+    for (let i=0; i<arr.length; i++){
+        for (let j=0; j<arr[0].length; j++){
+            console.log(arr[i][j]);
+        }
+    }
+}
+let arr = [[1,2],[3,4],[5,6]];
+printArray(arr);
+
+//delete the occurence of an element
+
+const deleteElem = (Arr,elem) => {
+    for (let i=0; i< Arr.length; i++){
+        if (Arr[i] == elem){
+            Arr.splice(i,1);
+        }
+    }
+    return Arr;
+}
+
+let Arr = [20,34,86,45,56,78,49];
+
+console.log(deleteElem(Arr,56));
+
+for (let i=0; i < 5; i++ ){
+   setTimeout(()=>console.log(i),5000);
+}
+
+//finding the power
+const findPow = (num, pow) => {
+    let res = 1;
+    for(let i=0; i<pow; i++){
+        res = res * num;
+    }
+    return res;
+}
+console.log(findPow(4,3));
+console.log(findPow(2,4));
+
+//finding the sum of all the numbers in a loop
+const allNumbers = (arr) =>{
+    let count=0;
+    for (let j=0; j <arr.length; j++){
+        count += arr;
+    }
+    return count;
+}
+ let arrayNum = [2,3,4,5,6,7];
+console.log(allNumbers(arr));
+
+let a = 7;
+let b = a;
+a= 10;
+console.log(b);
+
+console.log(4>2>1 ===false);
+
+const obj1= {first :20 , second: 30 , first : 50};
+console.log(obj1);
+
+
